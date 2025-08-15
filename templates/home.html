@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-and-Signup </title>
+     <style>
+        /* Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 100px auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        a {
+            display: inline-block;
+            margin: 15px 10px;
+            padding: 12px 30px;
+            background: #fff;
+            color: #2575fc;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s ease;
+        }
+
+        a:hover {
+            background: #2575fc;
+            color: #fff;
+            box-shadow: 0px 4px 15px rgba(37, 117, 252, 0.5);
+        }
+
+        .highlight {
+            color: #ffdd57;
+            font-weight: bold;
+        }
+    </style>
+    
+</head>
+<body> 
+    <div>
+        <h1>Hey User welcome to the web application </h1>
+        <p>Inside the web app, here i created a login and sign-up system . I am learn new think in this like Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nisi neque culpa consequatur nemo fugiat magni dolor vel maiores velit pariatur at asperiores, reiciendis accusamus eos tenetur quae. Consectetur, itaque. </p> <br> <hr>
+        <p>if you are new user then click on sign-up</p>
+        <a href="{{ url_for('signup')}}">sign-up</a>  <br>
+        <p>if you have allready acount then click on Loign </p>
+        <a href="{{ url_for('login')}}">Login</a> 
+        
+    </div>
+
+     
+</body>
+</html>
